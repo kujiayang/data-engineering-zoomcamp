@@ -44,7 +44,7 @@ docker build -t test:pandas .
 We can now run the container and pass an argument to it, so that our pipeline will receive it:
 
 ```bash
-docker run -it test:pandas some_number
+docker run -it --rm test:pandas some_number
 ```
 
 You should get the same output you did when you ran the pipeline script by itself.
