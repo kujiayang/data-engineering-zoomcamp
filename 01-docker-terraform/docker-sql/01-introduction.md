@@ -87,6 +87,8 @@ We can restart one of them, but we won't do it, because it's not a good practice
 ```bash
 docker rm $(docker ps -aq)
 ```
+-aq shows the id of all the saved states
+rm removes all of the saved states
 
 Next time we run something, we add `--rm`:
 
@@ -114,7 +116,7 @@ docker run -it \
 
 ## Volumes
 
-So, we know that with docker we can restore any container to its initial state in a reproducible manner. But what about data? A common way to do so is with _volumes_.
+So, we know that with docker we can restore any container to its initial state in a reproducible manner. But what about data? A common way to do so is with _volumes_. Volumes allow files on the host machine to be accessible to the docker container.
 
 Let's create some data in `test`:
 
