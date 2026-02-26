@@ -30,6 +30,8 @@ print("arguments", sys.argv)
 day = int(sys.argv[1])
 print(f"Running pipeline for day {day}")
 ```
+prints out the arguments with sys.argv[0] being the file name and sys.argv[1] being the number after file name when running command
+makes it into an integer
 
 Now let's add pandas:
 
