@@ -78,6 +78,7 @@ COPY pipeline.py pipeline.py
 
 # Set entry point
 ENTRYPOINT ["uv", "run", "python", "pipeline.py"]
+# does not actually need uv run as virtual environment is already added to PATH
 ```
 
 **[↑ Up](README.md)** | **[← Previous](02-virtual-environment.md)** | **[Next →](04-postgres-docker.md)**
